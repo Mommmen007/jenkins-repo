@@ -9,7 +9,11 @@ pipeline {
     stages {
         stage('Getting Repo files') {
             steps {
+<<<<<<< HEAD
+                git branch: "${GIT_BRANCH}", credentialsId: 'github', url: "${REPO_URL}"
+=======
                 git branch: "main", credentialsId: 'github', url: "${REPO_URL}"
+>>>>>>> 9aade4842a30a65a371c745e4785baf92a213062
             }
         }
 
@@ -52,4 +56,8 @@ pipeline {
             }
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9aade4842a30a65a371c745e4785baf92a213062
